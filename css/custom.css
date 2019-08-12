@@ -233,7 +233,7 @@ div.arrow { background: url("../img/arrow.png") no-repeat scroll 0 0 rgba(0, 0, 
 /* ==========================================================
                 Contact
 ============================================================= */
-.contact { background-color: #096885; border-bottom: 5px solid #F76A6E; padding: 50px; font-size:.9em; color: #F0D8D9; font-size: 1.1em; line-height: 1.5; }
+.contact { background-color: #096885; border-bottom: 5px solid #F76A6E; padding: 50px 0; font-size:.9em; color: #F0D8D9;  }
 .contact a { color: #F0D8D9 }
 .contact a:hover { color: #7A191C }
 .overlay { display:block; text-align:center; color:#fff; font-size:60px; line-height:80px; opacity:0.8; padding:0 4px; }
