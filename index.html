@@ -16,6 +16,7 @@
 	<link href="fa/css/all.css" rel="stylesheet">
 	<!-- Custom CSS -->
 	<link href="css/custom.css" rel="stylesheet">
+	<script src="js/jquery.min.js"></script>
 </head>
 <body data-spy="scroll" data-target="#ha-header">
 	<!-- Fixed navbar -->
@@ -252,6 +253,13 @@
 							<div class="project_wrap">
 								<ul class="cbp-ig-grid">
 									<li>
+										<a href="experiment.html">
+											<img src="img/experiment.jpg" style="height: 200px; width: auto; margin: 10px;" />
+											<h3 class="cbp-ig-title">Экспериментальные<br />выходные</h3>
+											<span class="cbp-ig-category">Фестиваль</span>
+										</a>
+									</li>
+									<li>
 										<a href="lubinsky.html">
 											<img src="img/lubinsky.jpg" style="height: 200px; width: auto; margin: 10px;" />
 											<h3 class="cbp-ig-title">Вкусный Любинский<br />&nbsp;</h3>
@@ -286,16 +294,35 @@
 											<span class="cbp-ig-category">Культурно-просветительный форум</span>
 										</a>
 									</li>
-									<li>
-										<a href="ded_moroz.html">
-											<img src="img/ded_moroz.png" style="height: 200px; width: auto; margin: 10px;" />
-											<h3 class="cbp-ig-title">I межрайонный съезд <br />Дедов Морозов</h3>
-											<span class="cbp-ig-category">Конкурс</span>
-										</a>
-									</li>
+									<span id="archive">
+										<li>
+											<a href="ded_moroz.html">
+												<img src="img/ded_moroz.png" style="height: 200px; width: auto; margin: 10px;" />
+												<h3 class="cbp-ig-title">I межрайонный съезд <br />Дедов Морозов</h3>
+												<span class="cbp-ig-category">Конкурс</span>
+											</a>
+										</li>
+										<li>
+											<a href="strofa55.html">
+												<img src="img/strofa55.jpg" style="height: 200px; width: auto; margin: 10px;" />
+												<h3 class="cbp-ig-title">Строфа55<br />&nbsp;</h3>
+												<span class="cbp-ig-category">Конкурс</span>
+											</a>
+										</li>
+									</span>
 								</ul>
 							</div>
 						</div>
+						<button class="btn btn-archive btn-block" id="button-next">Показать больше проектов</button>
+						<script>
+							$(document).ready(function(){
+								$("#archive").hide();
+								$("#button-next").click(function () {
+									$("#archive").slideToggle("fast");
+									$("#button-next").hide();
+								});
+							})
+						</script>
 					</div>
 				</div>
 			</div>
@@ -534,7 +561,6 @@
 	<!-- /Footer -->
 
 	<!-- JavaScript -->
-	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/jquery.nicescroll.min.js"></script><!-- jquery nice scroll-->
 	<script src="js/pace.min.js" ></script> <!--page load progress bar-->
