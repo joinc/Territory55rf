@@ -20,15 +20,9 @@ body { color: #555; font-family: aller_lightregular; font-size: 1.1em; line-heig
 h1, h2, h3, h4, h5, h6 { font-family: "allerregular", Helvetica, Arial, sans-serif; }
 a { color: #EB5055; }
 a:hover, button { color: #F0D8D9; -webkit-transition: all 0.2s ease-out; -moz-transition: all 0.2s ease-out; -o-transition: all 0.2s ease-out; -ms-transition: all 0.2s ease-out; transition: all 0.2s ease-out; outline:none; }
-a:hover, a:focus { color: #BA383D; outline: medium none; text-decoration: none }
-::-moz-selection {
-color: #fff;
-background: #EB5055;
-}
-::selection {
-color: #fff;
-background: #EB5055;
-}
+a:hover, a:focus { color: #BA383D; outline: medium none; text-decoration: none; }
+::-moz-selection { color: #fff; background: #EB5055; }
+::selection { color: #fff; background: #EB5055; }
 img { vertical-align: middle; max-width: 100%; height:auto; width: 100%; }
 .blink img { vertical-align: middle; max-width: 100%; height:auto; width: 128px;}
 ul { list-style: none; }
@@ -181,7 +175,11 @@ div.arrow { background: url("../img/arrow.png") no-repeat scroll 0 0 rgba(0, 0, 
 /* ==========================================================
                 Projects
 ============================================================= */
-.projects { background-color: #303441; border-bottom: 5px solid #F76A6E; color: #767E9E; padding: 50px 0 }
+.projects { background-color: #303441; border-bottom: 5px solid #F76A6E; color: #767E9E; padding: 50px 0; }
+.projects .btn { font-size: 1.4em; }
+.projects i { margin: 0.2em 0.6em 0 0.6em; }
+.projects i#left { float: left;}
+.projects i#right { float: right;}
 .project_wrap { margin: 40px 0 0; }
 .cbp-ig-grid { list-style: none; padding: 0 0 50px 0; margin: 0; }
 .cbp-ig-grid:before, .cbp-ig-grid:after { content: " "; display: table; }
@@ -220,6 +218,11 @@ div.arrow { background: url("../img/arrow.png") no-repeat scroll 0 0 rgba(0, 0, 
                 Command
 ============================================================= */
 .command { background: #F2F2F2; border-bottom: 5px solid #F76A6E; color: #666D89; padding: 50px 0; }
+
+/* ==========================================================
+                Polls
+============================================================= */
+.polls { background-color: #303441; border-bottom: 5px solid #F76A6E; color: #767E9E; padding: 50px 0; }
 
 /* ==========================================================
                 Documents
